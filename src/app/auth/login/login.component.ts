@@ -4,6 +4,7 @@ import { FormBuilder, FormGroup, Validators , FormControl} from '@angular/forms'
 import { first } from 'rxjs/operators';
 
 import { AuthenticationService } from '../../services';
+import { NbAuthSocialLink } from '@nebular/auth';
 
 @Component({
   selector: 'ngx-login',
@@ -17,7 +18,9 @@ export class LoginComponent implements OnInit {
   submitted = false;
   returnUrl: string;
   error = '';
-
+  errors: string[];
+  showMessages: any;
+  socialLinks: NbAuthSocialLink[];
   constructor(
       private formBuilder: FormBuilder,
       private route: ActivatedRoute,
