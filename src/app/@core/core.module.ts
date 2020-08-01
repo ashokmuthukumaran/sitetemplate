@@ -57,17 +57,17 @@ import { MockDataModule } from './mock/mock-data.module';
 
 const socialLinks = [
   {
-    url: 'https://github.com/akveo/nebular',
+    url: 'https://www.linkedin.com/in/veemak-solutions-789667177/?originalSubdomain=in',
     target: '_blank',
-    icon: 'github',
+    icon: 'kinkedin',
   },
   {
-    url: 'https://www.facebook.com/akveo/',
+    url: 'https://www.facebook.com/veemak/',
     target: '_blank',
     icon: 'facebook',
   },
   {
-    url: 'https://twitter.com/akveo_inc',
+    url: 'https://twitter.com/veemak',
     target: '_blank',
     icon: 'twitter',
   },
