@@ -40,10 +40,10 @@ export class LoginComponent implements OnInit {
           'username': new FormControl(''),
             'password': new FormControl('') 
       });
-   
+      this.authenticationService.logout();
 
       // get return url from route parameters or default to '/'
-      this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+      this.returnUrl = this.route.snapshot.queryParams['returnUrl'] || 'pages/dashboard';
   }
 
   // convenience getter for easy access to form fields
@@ -63,11 +63,14 @@ export class LoginComponent implements OnInit {
           .subscribe(
               data => {
                   this.router.navigate([this.returnUrl]);
+                  localStorage.setItem('currentUser', JSON.stringify(data));
               },
               error => {
                   this.error = error;
                   this.loading = false;
               });
-  }
+     }
+
+     
 
 }
