@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FileUploader ,FileSelectDirective } from 'ng2-file-upload';
 
 import { FileUploadModule } from "ng2-file-upload"
+import { Directive } from '@angular/core';
+
 
 // const URL = '/api/';
 const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
@@ -11,6 +13,7 @@ const URL = 'https://evening-anchorage-3159.herokuapp.com/api/';
   templateUrl: './uploaddemo.component.html',
   styleUrls: ['./uploaddemo.component.scss']
 })
+
 export class UploaddemoComponent implements OnInit {
 
   uploader:FileUploader;

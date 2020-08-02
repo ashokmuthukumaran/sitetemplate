@@ -6,6 +6,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { AuthGuard } from '../helpers';
+import { UploaddemoComponent } from './ai/uploaddemo/uploaddemo.component';
 
 const routes: Routes = [{
   path: '',
@@ -17,8 +18,8 @@ const routes: Routes = [{
       canActivate: [AuthGuard] 
     },
     {
-      path: 'iot-dashboard',
-      component: DashboardComponent,
+      path: 'uploaddemo',
+      component: UploaddemoComponent,
     },
     {
       path: 'layout',

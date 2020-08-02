@@ -10,7 +10,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
   {
     title: 'File upload ',
     icon: 'shuffle-2-outline',
-    link: '/pages/iot-dashboard',
+    link: '/pages/uploaddemo',
   },/*
   {
     title: 'FEATURES',
