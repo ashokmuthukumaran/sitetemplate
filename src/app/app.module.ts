@@ -23,7 +23,7 @@ import {
 import { LoginComponent } from './auth/login/login.component';
 import { RegisterComponent } from './auth/register/register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { FileDropDirective, FileSelectDirective} from 'ng2-file-upload';
 
 @NgModule({
   declarations: [AppComponent, LoginComponent, RegisterComponent],
@@ -33,6 +33,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    FileSelectDirective ,
+    FileDropDirective,
     ReactiveFormsModule,
     NbSidebarModule.forRoot(),
     NbMenuModule.forRoot(),

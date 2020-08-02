@@ -2,16 +2,16 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'E-commerce',
-    icon: 'shopping-cart-outline',
+    title: 'User grid',
+    icon: 'keypad-outline',
     link: '/pages/dashboard',
     home: true,
   },
   {
-    title: 'IoT Dashboard',
-    icon: 'home-outline',
+    title: 'File upload ',
+    icon: 'shuffle-2-outline',
     link: '/pages/iot-dashboard',
-  },
+  },/*
   {
     title: 'FEATURES',
     group: true,
@@ -43,6 +43,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
+  /*
   {
     title: 'Forms',
     icon: 'edit-2-outline',
@@ -243,5 +244,5 @@ export const MENU_ITEMS: NbMenuItem[] = [
         link: '/auth/reset-password',
       },
     ],
-  },
+  },*/
 ];
