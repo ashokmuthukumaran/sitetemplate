@@ -8,6 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { UploaddemoComponent } from './ai/uploaddemo/uploaddemo.component';
+import { AiModule } from './ai/uploaddemo/ai.module';
 
 @NgModule({
   imports: [
@@ -17,10 +18,10 @@ import { UploaddemoComponent } from './ai/uploaddemo/uploaddemo.component';
     DashboardModule,
     ECommerceModule,
     MiscellaneousModule,
+    AiModule,
   ],
   declarations: [
     PagesComponent,
-    UploaddemoComponent,
   ],
 })
 export class PagesModule {
