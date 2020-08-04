@@ -2,13 +2,13 @@ import { NbMenuItem } from '@nebular/theme';
 
 export const MENU_ITEMS: NbMenuItem[] = [
   {
-    title: 'User grid',
+    title: 'Search',
     icon: 'keypad-outline',
     link: '/pages/dashboard',
     home: true,
   },
   {
-    title: 'File upload ',
+    title: 'Process',
     icon: 'shuffle-2-outline',
     link: '/pages/uploaddemo',
   },/*

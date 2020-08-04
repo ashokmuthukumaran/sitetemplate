@@ -12,6 +12,7 @@ import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './helpers';
 
 export const routes: Routes = [
+  {path: 'simple-material', loadChildren: () => import('./material/material.module').then(mod => mod.MaterialModule)},
   {
     path: 'pages',
     loadChildren: () => import('./pages/pages.module')
