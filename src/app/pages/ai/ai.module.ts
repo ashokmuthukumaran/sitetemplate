@@ -5,17 +5,15 @@ import { MatCardModule } from '@angular/material/card' ;
 import { MatFormFieldModule } from '@angular/material/form-field' ;
 import { MatInputModule } from '@angular/material/input' ;
 import { MatProgressBarModule } from '@angular/material/progress-bar' ;
-
-import { UploaddemoComponent } from './uploaddemo.component';
+import { Ng2SmartTableModule } from 'ng2-smart-table';
+import { UploaddemoComponent } from './uploaddemo/uploaddemo.component';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NgxUploadModule, DropTargetOptions } from '@wkoza/ngx-upload';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [
-  { path: '', redirectTo: 'ai', pathMatch: 'full' },
-  { path: 'material', component: UploaddemoComponent }
-];
+import { NbButtonModule, NbCardModule, NbTabsetModule, NbUserModule } from '@nebular/theme';
+import { ThemeModule } from '../../@theme/theme.module';
+import { SearchComponent } from './search/search.component';
 
 export const ngxDropTargetOptions: DropTargetOptions = {
   color: 'dropZoneColor',
@@ -24,9 +22,14 @@ export const ngxDropTargetOptions: DropTargetOptions = {
 };
 
 @NgModule({
-  declarations: [UploaddemoComponent],
-  imports: [
-    RouterModule.forChild(routes),
+  declarations: [UploaddemoComponent, SearchComponent],
+  imports: [ NbButtonModule,
+    NbCardModule,
+    MatProgressBarModule,
+    NbTabsetModule,
+    NbUserModule,
+    Ng2SmartTableModule,
+    ThemeModule,
     MatButtonModule,
     MatFormFieldModule,
     MatInputModule,

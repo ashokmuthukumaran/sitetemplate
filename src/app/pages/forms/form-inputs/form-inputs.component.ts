@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { NbThemeService } from '@nebular/theme';
 import { Observable } from 'rxjs';
 import { tap } from 'rxjs/operators';
+import { NbThemeService, NbColorHelper } from '@nebular/theme';
 
 @Component({
   selector: 'ngx-form-inputs',
@@ -9,7 +9,7 @@ import { tap } from 'rxjs/operators';
   templateUrl: './form-inputs.component.html',
 })
 export class FormInputsComponent implements OnInit {
-  public constructor(private readonly themeService: NbThemeService) {
+  public constructor(private readonly themeService:NbThemeService) {
   }
 
   public materialTheme$: Observable<boolean>;

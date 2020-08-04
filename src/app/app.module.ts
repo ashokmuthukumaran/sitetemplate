@@ -19,7 +19,7 @@ import { Directive } from '@angular/core';
 import {  FileUploadModule } from "ng2-file-upload"
 import { NgxUploadModule,DropTargetOptions } from '@wkoza/ngx-upload';
 import { Routes } from '@angular/router';
-
+import { SimpleMaterialComponent } from './material/simple.component';
 
 export const ngxDropTargetOptions: DropTargetOptions = {
   color: 'dropZoneColor',

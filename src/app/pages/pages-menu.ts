@@ -11,7 +11,9 @@ export const MENU_ITEMS: NbMenuItem[] = [
     title: 'Process',
     icon: 'shuffle-2-outline',
     link: '/pages/uploaddemo',
-  },/*
+  },
+  
+  /*
   {
     title: 'FEATURES',
     group: true,

@@ -8,7 +8,7 @@ import { ECommerceModule } from './e-commerce/e-commerce.module';
 import { PagesRoutingModule } from './pages-routing.module';
 import { MiscellaneousModule } from './miscellaneous/miscellaneous.module';
 import { UploaddemoComponent } from './ai/uploaddemo/uploaddemo.component';
-import { AiModule } from './ai/uploaddemo/ai.module';
+import { AiModule } from './ai/ai.module';
 
 @NgModule({
   imports: [

@@ -5,5 +5,5 @@
  */
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:5000',
+  apiUrl: 'http://ec2-35-153-255-233.compute-1.amazonaws.com/veemakauthapp'
 };

@@ -7,6 +7,7 @@ import { ECommerceComponent } from './e-commerce/e-commerce.component';
 import { NotFoundComponent } from './miscellaneous/not-found/not-found.component';
 import { AuthGuard } from '../helpers';
 import { UploaddemoComponent } from './ai/uploaddemo/uploaddemo.component';
+import { SearchComponent } from './ai/search/search.component';
 
 const routes: Routes = [{
   path: '',
@@ -20,6 +21,10 @@ const routes: Routes = [{
     {
       path: 'uploaddemo',
       component: UploaddemoComponent,
+    },
+    {
+      path: 'Search',
+      component: SearchComponent,
     },
     {
       path: 'layout',
