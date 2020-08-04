@@ -23,6 +23,7 @@ const routes: Routes = [
     MatFormFieldModule,
     MatInputModule,
     MatProgressBarModule,
+    SimpleMaterialComponent,
     MatCardModule,
     FormsModule,
     CommonModule,

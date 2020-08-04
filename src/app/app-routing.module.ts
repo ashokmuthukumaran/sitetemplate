@@ -10,9 +10,11 @@ import {
 } from '@nebular/auth';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthGuard } from './helpers';
+import { SimpleMaterialComponent } from './material/simple.component';
 
 export const routes: Routes = [
   {path: 'simple-material', loadChildren: () => import('./material/material.module').then(mod => mod.MaterialModule)},
+  { path: 'material', component: SimpleMaterialComponent },
   {
     path: 'pages',
     loadChildren: () => import('./pages/pages.module')
